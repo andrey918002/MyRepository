@@ -2,6 +2,10 @@ body{
     margin: 0;
     padding: 0;
 }
-.frame{
-    
+.frame{}
+.racoon h1{
+    color: red;
+}
+.racoon p{
+    color:green;
 }
