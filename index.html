@@ -6,14 +6,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="" method="post">
     <div class="frame">
         <div class="header">
             <ul>
-                <li><img src="img/bank.png" alt=""></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Homework</a></li>
-                <li><a href="">Settings</a></li>
+                <li><img src="img/bank.png" alt="none"></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Homework</a></li>
+                <li><a href="#">Settings</a></li>
             </ul>
             <div>
                 <img src="img/av_64.png" alt="none">
@@ -30,29 +29,35 @@
                     </ul>
                 </div>
                 <div class="set_content">
-                    <ul>
-                        <li><input type="file" id="avatar" accept=".png, .jpeg, .jpg, .bmp"></li>
-                        <li><label for="avatar">Choose photo</label></li>
-                    </ul>
-                    <ul>
-                        <li><input type="text"></li>
-                        <li><input type="text"></li>
-                        <li><input type="email"></li>
-                        <li><input type="text"></li>
-                        <li><input type="text"></li>
-                        <li><input type="text"></li>
-                        <li><input type="submit"></li>
-                    </ul>
-                    <ul>
-                        <li><input type="password"></li>
-                        <li><input type="password"></li>
-                        <li><input type="password"></li>
-                        <li><input type="submit"></li>
-                    </ul>
+                    <form action="#" method="post">
+                        <ul>
+                            <li><img src="img/av_256.png" class="image" alt="none"></li>
+                            <li><input type="file" id="avatar" accept=".png, .jpeg, .jpg, .bmp" ></li>
+                            <li><label for="avatar">Choose photo</label></li>
+                        </ul>
+                    </form>
+                    <form action="#" method="post">
+                        <ul>
+                            <li><input type="text" maxlength="16" pattern="[A-Za-zА-Яа-яЁё]{2,}" title="Введите свое имя" placeholder="First name" required></li>
+                            <li><input type="text" maxlength="16" pattern="[A-Za-zА-Яа-яЁё]{2,}" title="Укажите свою фамилию" placeholder="Last name"required></li>
+                            <li><input type="email" maxlength="30" title="Введите ваш Email в указанном формате: Local@domen.com" placeholder="Email"required></li>
+                            <li><input type="text" placeholder="Phone Number" maxlength="19" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="Введите ваш Email в указанном формате: +380 (95) 123-65-90" required></li>
+                            <li><input type="text" placeholder="Address" title="Укажите ваш адресс" maxlength="25" required></li>
+                            <li><input type="url" placeholder="FB link" pattern="https://.*" title="укажите ссылку на соц сеть  формате https://addressite.com" maxlength="30"></li>
+                            <li><input type="submit" value="Save Changes"></li>
+                        </ul>
+                    </form>
+                    <form action="#" method="post">
+                        <ul>
+                            <li><input type="password" maxlength="20" pattern="[0-9A-Za-z]{4,20}" title="Введите ваш старый пароль" placeholder="Old password" required></li>
+                            <li><input type="password" maxlength="20" pattern="[0-9A-Za-z]{4,20}" title="Для создания пароля используйте цифры и латинские буквы. От 4 до 20 символов" placeholder="New password" required></li>
+                            <li><input type="password" maxlength="20" pattern="[0-9A-Za-z]{4,20}" title="Подтвердите новый пароль" placeholder="Repeat password" required></li>
+                            <li><input type="submit" value="Change password"></li>
+                        </ul>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-</form>
 </body>
 </html>

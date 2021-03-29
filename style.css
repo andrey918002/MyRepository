@@ -52,9 +52,13 @@ ul{
     text-decoration: none;
     color: #809db5;
 }
+.header ul li:nth-child(4) a{
+    color: #dae4ed;
+}
 .header ul li a:hover{
     color: #dae4ed;
 }
+
 .header div img{
     margin-right: 20px;
 }
@@ -64,6 +68,9 @@ h1{
     padding: 23px 0;
     font-weight: normal;
     color: #1a3f55;
+}
+.set_header{
+    border-radius: 5px;
 }
 .set_header ul{
     text-transform: uppercase;
@@ -80,32 +87,53 @@ h1{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
 }
-.set_content ul{
-    margin: 20px 20px 20px 0;
+form{
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
 }
-.set_content ul:nth-child(2){
-    flex-grow: 2;
+form:nth-child(1){
+    width: 22%;
+    margin-right: 20px;
 }
-.set_content ul:nth-child(3){
-    flex-grow: 2;
-    margin-right: 0;
+form:nth-child(2){
+    width: 37%;
+}
+form:nth-child(3){
+    margin-left: 20px;
+    width: 38%;
+}
+.image{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.set_content form ul{
+    width: 100%;
 }
 input{
     margin: 5px 0;
     width: 100%;
-    padding: 5px 5px;
-    font-size: 17px;
+    padding: 7px 7px;
+    font-size: 15px;
     border: 1px solid #bebebe;
     border-radius: 5px;
     outline: none;
 }
 #avatar{
     display: none;
+    margin-top: 20px;
 }
-label{
-    padding: 20px;
-    border: 1px solid black;
+label, input[type=submit]{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: #dae4ed;
+    cursor: pointer;
+}
+input:focus:valid{
+    box-shadow: 0 0 2px 2px #1fe71f;
+}
+input:focus:invalid{
+    box-shadow: 0 0 2px 2px red;
 }
