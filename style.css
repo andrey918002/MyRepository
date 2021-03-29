@@ -1,11 +1,48 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.frame{}
-.racoon h1{
-    color: red;
+.frame{
+    margin: 200px auto;
+    max-width: 800px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
 }
-.racoon p{
-    color:green;
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #1b5589;
+}
+.content{
+    width: 100%;
+    height: 440px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.settings{
+    width: 100%;
+}
+.set_header{
+    width: 100%;
+    background-color: #cce5ff;
+}
+ul{
+    list-style-type: none;
+}
+.set_header ul{
+    text-transform: uppercase;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.set_content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
