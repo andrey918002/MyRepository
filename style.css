@@ -7,7 +7,7 @@
     margin: 200px auto;
     max-width: 800px;
     width: 100%;
-    max-height: 500px;
+    max-height: 600px;
     height: 100%;
 }
 .header{
@@ -17,7 +17,7 @@
 }
 .content{
     width: 100%;
-    height: 440px;
+    height: 100%;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -81,4 +81,31 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+}
+.set_content ul{
+    margin: 20px 20px 20px 0;
+}
+.set_content ul:nth-child(2){
+    flex-grow: 2;
+}
+.set_content ul:nth-child(3){
+    flex-grow: 2;
+    margin-right: 0;
+}
+input{
+    margin: 5px 0;
+    width: 100%;
+    padding: 5px 5px;
+    font-size: 17px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    outline: none;
+}
+#avatar{
+    display: none;
+}
+label{
+    padding: 20px;
+    border: 1px solid black;
 }
