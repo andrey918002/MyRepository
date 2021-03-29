@@ -7,7 +7,6 @@
     margin: 200px auto;
     max-width: 800px;
     width: 100%;
-    max-height: 600px;
     height: 100%;
 }
 .header{
@@ -125,6 +124,8 @@ input{
     margin-top: 20px;
 }
 label, input[type=submit]{
+    display: block;
+    width: 100%;
     padding: 10px 30px;
     border-radius: 5px;
     background-color: #6c757d;
